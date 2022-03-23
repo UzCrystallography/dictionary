@@ -1,0 +1,134 @@
+/* Core Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    background-color: #333;
+}
+
+.toWhite {
+    color: white;
+}
+
+.toCenter {
+    text-align: center;
+}
+
+/* Navigation Section Styles */
+.navigation-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #555;
+}   
+
+.navigation-item {
+    padding: 10px 15px;
+    border-right: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-item:hover {
+    background-color: #666;
+}
+
+/* Alphabet Section Styles */
+.alphabet-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 3% 4%;
+}
+
+.alphabet-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    width: 36px;
+    height: 36px;
+}
+
+.alphabet-item:hover {
+    color: white;
+    background-color: #555;
+}
+
+.alphabet-item:active {
+    background-color: #777;
+}
+
+/* Word Collection Section (list of words) */
+.words {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 3% 0;
+}
+
+.word {
+    margin-bottom: 4px;
+}
+
+.word a {
+    color: black;
+    text-decoration: none;
+}
+
+.word a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* Return Home Button Styles */
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #555;
+    padding: 12px 25px;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    margin-left: 4%;
+    border-radius: 6px;
+}
+
+.home-btn:hover {
+    background-color: #777;
+}
+
+
+/* Definition Section Styles */
+.word-definition {
+    padding: 3% 4%;
+}
+
+.word-translations {
+    font-size: 0.8em;
+    padding: 2px 0 15px;
+    color: #777;
+}
