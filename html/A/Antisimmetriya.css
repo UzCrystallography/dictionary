@@ -1,0 +1,77 @@
+.antisimmetriya-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.symmetric-images,
+.antisymmetric-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.symmetric-image,
+.antisymmetric-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.symmetric-image:nth-child(2),
+.antisymmetric-image:nth-child(2) {
+    border-right: none;
+    border-left: none;
+}
+
+.symmetric-image img,
+.antisymmetric-image img {
+    height: 200px;
+}
+
+@media only screen and (max-width: 524px) {
+    .antisimmetriya-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .symmetric-images,
+    .antisymmetric-images {
+        flex-direction: column;
+    }
+
+    .symmetric-image,
+    .antisymmetric-image {
+        border-top: none;
+        border-bottom: 1px solid black;
+        border-right: none;
+        width: 150px;
+    }
+
+    .antisymmetric-image {
+        border-right: 1px solid black;
+    }
+
+    .symmetric-image:nth-child(1),
+    .antisymmetric-image:nth-child(1) {
+        border-top: 1px solid black;
+    }
+
+    .symmetric-image:nth-child(2),
+    .antisymmetric-image:nth-child(2) {
+        border-left: 1px solid black;
+    }
+    
+    .antisymmetric-image:nth-child(2) {
+        border-right: 1px solid black;
+    }
+
+    .symmetric-image img,
+    .antisymmetric-image img {
+        width: 120px;
+    }
+}
