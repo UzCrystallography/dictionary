@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.to-red {
+    color: red;
+}
+
 body {
     margin: 0;
     padding: 0;
